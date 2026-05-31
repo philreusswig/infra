@@ -1,0 +1,31 @@
+# ==========================================
+# Core Editor & Version Control
+# ==========================================
+git
+vim
+neovim
+
+# ==========================================
+# Terminal Utilities & Multiplexers
+# ==========================================
+tmux
+jq
+zoxide
+fd-find
+fzf
+
+# ==========================================
+# Build Tools
+# ==========================================
+gcc
+gcc-c++
+make
+automake
+autoconf
+gdb
+binutils
+glibc-devel
+cmake
+ninja-build
+clang
+clang-tools-extra
