@@ -31,7 +31,6 @@ fi
 
 # Link Dotfiles
 echo "🔗 Symlinking dotfiles..."
-mkdir -p "$HOME/.config/nvim" "$HOME/.config/jj" "$HOME/.config/wezterm"
 
 # Safe symlink function
 symlink_file() {
@@ -56,8 +55,17 @@ for src_file in "$(pwd)/dotfiles/bash/.bashrc.d"/*.sh; do
     symlink_file "$src_file" "$HOME/.bashrc.d/$filename"
 done
 
+# Link git
+mkdir -p "$HOME/.config/git"
+symlink_file "$(pwd)/dotfiles/git/config" "$HOME/.config/git/config"
+
+# Link nvim
+mkdir -p "$HOME/.config/nvim"
 symlink_file "$(pwd)/dotfiles/nvim/init.lua" "$HOME/.config/nvim/init.lua"
-symlink_file "$(pwd)/dotfiles/tmux/.tmux.conf" "$HOME/.tmux.conf"
+
+# Link tmux
+mkdir -p "$HOME/.config/tmux"
+symlink_file "$(pwd)/dotfiles/tmux/tmux.conf" "$HOME/.config/tmux/tmux.conf"
 
 echo "=================================================="
 echo "✅ Bootstrap Complete successfully!"
