@@ -14,6 +14,7 @@ zoxide
 fd-find
 fzf
 gawk
+ripgrep
 
 # ==========================================
 # Build Tools
