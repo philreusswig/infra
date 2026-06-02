@@ -3,12 +3,17 @@
 
 [core]
     editor = nvim
+    autocrlf = input
 
 [diff]
     tool = vscode
 
 [difftool "vscode"]
     cmd = code --wait --diff "$LOCAL" "$REMOTE"
+    keepBackup = false
+
+[difftool]
+    prompt = false
 
 [merge]
     tool = vscode
@@ -16,3 +21,7 @@
 [mergetool "vscode"]
     cmd = code --wait "$MERGED"
     keepBackup = false
+    trustExitCode = true
+
+[mergetool]
+    prompt = false
