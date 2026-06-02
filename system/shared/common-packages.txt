@@ -13,6 +13,7 @@ jq
 zoxide
 fd-find
 fzf
+gawk
 
 # ==========================================
 # Build Tools
