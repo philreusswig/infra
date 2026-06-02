@@ -15,6 +15,7 @@ fd-find
 fzf
 gawk
 ripgrep
+tree-sitter-cli
 
 # ==========================================
 # Build Tools
