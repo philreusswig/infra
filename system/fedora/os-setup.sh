@@ -10,7 +10,7 @@ echo "📦 [Fedora] Upgrading package list..."
 sudo dnf check-update || true
 
 echo "📦 [Fedora] Installing shared packages..."
-grep -v '^#' system/shared/common-packages.txt | grep -v '^$' | xargs sudo dnf install -y
+grep -v '^#' system/fedora/packages.txt | grep -v '^$' | xargs sudo dnf install -y
 
 echo "📦 [Fedora] Installing Rust and Cargo..."
 curl https://sh.rustup.rs -sSf | sh
