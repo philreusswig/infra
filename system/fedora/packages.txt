@@ -32,3 +32,8 @@ cmake
 ninja-build
 clang
 clang-tools-extra
+
+# ==========================================
+# System Identity & Networking
+# ==========================================
+hostname
