@@ -16,3 +16,6 @@ cargo binstall --strategies crate-meta-data jj-cli
 
 echo "📦 [Fedora] Installing Python packages..."
 python3 -m pip install -r system/shared/python-packages.txt
+
+echo "📦 [Fedora] Installing Google Antigravity cli..."
+curl -fsSL https://antigravity.google/cli/install.sh | bash
