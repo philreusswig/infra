@@ -37,3 +37,9 @@ clang-tools-extra
 # System Identity & Networking
 # ==========================================
 hostname
+
+# ==========================================
+# Python
+# ==========================================
+python3
+python3-pip
