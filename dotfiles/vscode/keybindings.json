@@ -1,0 +1,30 @@
+[
+    // Terminal Navigation
+    { "key": "ctrl+/", "command": "workbench.action.terminal.toggleTerminal", "when": "!terminalFocus" },           // Terminal toggle open/close
+    { "key": "ctrl+/", "command": "workbench.action.terminal.toggleTerminal", "when": "terminalFocus" },            // Terminal toggle open/close
+    { "key": "ctrl+shift+/", "command": "workbench.action.toggleMaximizedPanel", "when": "terminalFocus" },         // Terminal toggle max/min
+    { "key": "ctrl+;", "command": "workbench.action.terminal.focus", "when": "!terminalFocus" },                    // Terminal focus to
+    { "key": "ctrl+;", "command": "workbench.action.focusActiveEditorGroup", "when": "terminalFocus" },             // Terminal focus away
+    // Sidebar
+    { "key": "ctrl+b", "command": "workbench.action.toggleSidebarVisibility"},                                      // Sidebar toggle open/close
+    { "key": "ctrl+e", "command": "workbench.view.explorer", "when": "!sideBarVisible || !explorerViewletFocus"},   // Sidebar explorer toggle open/close
+    { "key": "ctrl+e", "command": "workbench.action.toggleSidebarVisibility", "when": "sideBarVisible && explorerViewletFocus" }, // Sidebar explorer toggle open/close
+    // Suggest Widget Navigation
+    { "key": "ctrl+j", "command": "selectNextSuggestion", "when": "suggestWidgetVisible" },
+    { "key": "ctrl+k", "command": "selectPrevSuggestion", "when": "suggestWidgetVisible" },
+    // Quick Open Navigation
+    { "key": "ctrl+j", "command": "workbench.action.quickOpenSelectNext", "when": "inQuickOpen" },
+    { "key": "ctrl+k", "command": "workbench.action.quickOpenSelectPrevious", "when": "inQuickOpen" },
+    // File Explorer Navigation
+    { "key": "ctrl+j", "command": "list.focusDown", "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
+    { "key": "ctrl+k", "command": "list.focusUp", "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
+    { "key": "ctrl+h", "command": "list.collapse", "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
+    { "key": "ctrl+l", "command": "list.select", "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus" },
+    // Search Navigation
+    { "key": "ctrl+j", "command": "list.focusDown", "when": "listFocus && !inputFocus" },
+    { "key": "ctrl+k", "command": "list.focusUp", "when": "listFocus && !inputFocus" },
+    { "key": "ctrl+j", "command": "editor.action.nextMatchFindAction", "when": "findInputFocussed || findWidgetVisible" },
+    { "key": "ctrl+k", "command": "editor.action.previousMatchFindAction", "when": "findInputFocussed || findWidgetVisible" },
+    // Remove Defaults
+    { "key": "ctrl+j", "command": "-workbench.action.togglePanel" }
+]

@@ -1,0 +1,76 @@
+{
+	// ------------------------------------------------------------------------------------
+	// EDITOR SETTINGS - Visual appearance and behavior
+	// ------------------------------------------------------------------------------------
+
+	"editor.scrollBeyondLastLine": false,
+	"editor.cursorSurroundingLines": 8,
+	"editor.smoothScrolling": true,
+	"editor.minimap.enabled": false,
+	"editor.minimap.renderCharacters": false,
+	"editor.fontFamily": "JetBrainsMono Nerd Font",
+	"editor.fontSize": 14,
+	"workbench.sideBar.location": "right",
+	"workbench.colorTheme": "Tokyo Night",
+
+	// ------------------------------------------------------------------------------------
+	// VIM SETTINGS - Vim behavior
+	// ------------------------------------------------------------------------------------
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+	},
+
+	// ------------------------------------------------------------------------------------
+	// WHICH KEY BINDINGS - 
+	// ------------------------------------------------------------------------------------
+  	"whichkey.bindings": [
+		// ── f = File ───────────────────────────────────────────────────────────────────────
+		{
+			"key": "f",
+			"name": "+File",
+			"type": "bindings",
+			"bindings": [
+				{ "key": "f", "name": "Find Files",       "type": "command", "command": "workbench.action.quickOpen" },
+				{ "key": "r", "name": "Recent Files",     "type": "command", "command": "workbench.action.openRecent" },
+				{ "key": "n", "name": "New File",         "type": "command", "command": "workbench.action.files.newUntitledFile" },
+				{ "key": "b", "name": "Buffers",          "type": "command", "command": "workbench.action.showAllEditors" }
+			]
+		},
+		// ── G = Go To / LSP Navigation ────────────────────────────────────────────────────
+		{
+      		"key": "G",
+      		"name": "+Go To (LSP nav)",
+      		"type": "bindings",
+      		"bindings": [
+        		{ "key": "d", "name": "Definition",       "type": "command", "command": "editor.action.revealDefinition" },
+        		{ "key": "D", "name": "Declaration",      "type": "command", "command": "editor.action.revealDeclaration" },
+        		{ "key": "r", "name": "References",       "type": "command", "command": "editor.action.goToReferences" }
+			]
+		},
+		// ── s = Search ─────────────────────────────────────────────────────────────────────
+    	{
+      		"key": "s",
+      		"name": "+Search",
+      		"type": "bindings",
+      		"bindings": [
+				{ "key": "/", "name": "Grep in Current File", "type": "command", "command": "action.find" },
+				{ "key": "g", "name": "Grep in All Files",    "type": "command", "command": "workbench.action.findInFiles" },
+				{ "key": "w", "name": "Search Word",          "type": "command", "command": "workbench.action.findInFiles" },
+				{ "key": "r", "name": "Replace in Files",     "type": "command", "command": "workbench.action.replaceInFiles" },
+				{ "key": "s", "name": "Symbol in File",       "type": "command", "command": "workbench.action.gotoSymbol" },
+				{ "key": "S", "name": "Symbol in Workspace",  "type": "command", "command": "workbench.action.showAllSymbols" }
+			]
+    	},
+		// ── h = Help─────────────────────────────────────────────────────────────────────
+	    	{
+      		"key": "h",
+      		"name": "+Help",
+      		"type": "bindings",
+      		"bindings": [
+				{ "key": "k", "name": "Keymaps",              "type": "command", "command": "workbench.action.openGlobalKeybindings" },
+				{ "key": "c", "name": "Command Palette",      "type": "command", "command": "workbench.action.showCommands" },
+				{ "key": "h", "name": "Help / All Commands",  "type": "command", "command": "workbench.action.showAllCommands" }
+			]
+		}
+	]
+}
